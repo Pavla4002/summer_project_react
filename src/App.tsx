@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { RegularButton, SkipButton } from 'shared/ui';
+import MainTitle from 'shared/ui/MainTitle';
+import SmallGrayText from 'shared/ui/SmallGrayText';
+import OrangeMainTitle from 'shared/ui/OrangeMainTitle';
+
+//Для примера задан размер кнтейнеру с кнопкой
+const container = {
+  width: 150,
+  height: 50,
+  margin: 20,
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <span>Кнопки:</span>
+      <SkipButton />
+      {/*  Для примера размеров контейнер с кнопкой*/}
+      <div style={container}>
+        <RegularButton>Далее</RegularButton>
+      </div>
+      <span>Тексты:</span>
+      <MainTitle>Заголовок главный</MainTitle>
+      <SmallGrayText>Маленький серый текст</SmallGrayText>
+      <OrangeMainTitle>Оранжевый заголовок</OrangeMainTitle>
+      <MainTitle>
+        <OrangeMainTitle>Заголовок</OrangeMainTitle>главный
+      </MainTitle>
     </div>
   );
 }

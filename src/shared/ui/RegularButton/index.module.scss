@@ -1,0 +1,12 @@
+@import "app/styles/index";
+
+.regularBtn{
+  width: 100%;
+  height: 60px;
+  background-color: $orange-bg-text;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  font-weight: 400;
+  font-family: Inter,sans-serif;
+}
