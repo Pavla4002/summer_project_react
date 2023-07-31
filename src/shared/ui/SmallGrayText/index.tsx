@@ -5,7 +5,7 @@ interface SmallGrayTextProps {
 }
 
 const SmallGrayText = ({ children }: SmallGrayTextProps) => {
-  return <div className={styles.smallGrayText}>{children}</div>;
+  return <span className={styles.smallGrayText}>{children}</span>;
 };
 
 export default SmallGrayText;

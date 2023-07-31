@@ -5,7 +5,7 @@ interface MainTitleProps {
 }
 
 const MainTitle = ({ children }: MainTitleProps) => {
-  return <div className={styles.mainTitle}>{children}</div>;
+  return <span className={styles.mainTitle}>{children}</span>;
 };
 
 export default MainTitle;

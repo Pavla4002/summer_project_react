@@ -10,7 +10,7 @@
 
 .orange{
   font: $p-regular;
-  color: $orange-bg-text;
+  color: $orange-text;
   text-align: $center-position-text;
 }
 
@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $orange-bg-text;
+  background-color: $orange-text;
   border: none;
   color: white;
 }

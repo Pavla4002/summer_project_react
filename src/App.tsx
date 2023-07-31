@@ -2,30 +2,30 @@ import { RegularButton, SkipButton } from 'shared/ui';
 import MainTitle from 'shared/ui/MainTitle';
 import SmallGrayText from 'shared/ui/SmallGrayText';
 import OrangeMainTitle from 'shared/ui/OrangeMainTitle';
-
-//Для примера задан размер кнтейнеру с кнопкой
-const container = {
-  width: 150,
-  height: 50,
-  margin: 20,
-};
+import Text from 'shared/ui/Text';
 
 function App() {
   return (
     <div>
       <span>Кнопки:</span>
       <SkipButton />
-      {/*  Для примера размеров контейнер с кнопкой*/}
-      <div style={container}>
-        <RegularButton>Далее</RegularButton>
+      <div>
+        <RegularButton height="50px" width="150px">
+          Далее
+        </RegularButton>
       </div>
       <span>Тексты:</span>
       <MainTitle>Заголовок главный</MainTitle>
-      <SmallGrayText>Маленький серый текст</SmallGrayText>
-      <OrangeMainTitle>Оранжевый заголовок</OrangeMainTitle>
+      <div>
+        <SmallGrayText>Маленький серый текст</SmallGrayText>
+      </div>
+      <div>
+        <OrangeMainTitle>Оранжевый заголовок</OrangeMainTitle>
+      </div>
       <MainTitle>
-        <OrangeMainTitle>Заголовок</OrangeMainTitle>главный
+        <OrangeMainTitle>Заголовок</OrangeMainTitle> главный
       </MainTitle>
+      <Text> Game over!!!</Text>
     </div>
   );
 }

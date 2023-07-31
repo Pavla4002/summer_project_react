@@ -5,7 +5,7 @@ interface OrangeMainTitleProps {
 }
 
 const OrangeMainTitle = ({ children }: OrangeMainTitleProps) => {
-  return <div className={styles.orangeMainText}>{children}</div>;
+  return <span className={styles.orangeMainText}>{children}</span>;
 };
 
 export default OrangeMainTitle;

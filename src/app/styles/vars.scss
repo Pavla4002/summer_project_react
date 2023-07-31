@@ -1,19 +1,10 @@
 //colors
-$orange-bg-text: #FE5B18;
-$gray-text: #B0B0B0;
-
-@mixin large-text {
-  font: {
-    family: Inter;
-    size: $h1;
-    weight: bold;
-  }
-}
+$orange-text: #FE5B18;
+$gray-text: #B2ADAA;
 
 
 //fonts
 $h1:700 32px/40px Inter, sans-serif;
 $p-regular: 400 14px/20px Inter, sans-serif;
 $center-position-text: center;
-$left-position-text:left;
 
