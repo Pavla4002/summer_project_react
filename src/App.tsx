@@ -1,7 +1,5 @@
 import { RegularButton, SkipButton } from 'shared/ui';
-import MainTitle from 'shared/ui/MainTitle';
-import SmallGrayText from 'shared/ui/SmallGrayText';
-import OrangeMainTitle from 'shared/ui/OrangeMainTitle';
+import Title from 'shared/ui/Title';
 import Text from 'shared/ui/Text';
 
 function App() {
@@ -10,21 +8,26 @@ function App() {
       <span>Кнопки:</span>
       <SkipButton />
       <div>
-        <RegularButton height="50px" width="150px">
+        <RegularButton height={50} width={150}>
           Далее
         </RegularButton>
       </div>
       <span>Тексты:</span>
-      <MainTitle>Заголовок главный</MainTitle>
       <div>
-        <SmallGrayText>Маленький серый текст</SmallGrayText>
+        <Title level={1}>
+          Заголовок главный простой {''}
+          <Title color="#FE5B18" transform="uppercase">
+            оранжевый
+          </Title>
+        </Title>
       </div>
       <div>
-        <OrangeMainTitle>Оранжевый заголовок</OrangeMainTitle>
+        <Title level={1} color="#FE5B18">
+          Заголовок главный оранжевый
+        </Title>
       </div>
-      <MainTitle>
-        <OrangeMainTitle>Заголовок</OrangeMainTitle> главный
-      </MainTitle>
+      <Text type="secondary"> Game over!!!</Text>
+      <Text type="attention"> Game over!!!</Text>
       <Text> Game over!!!</Text>
     </div>
   );

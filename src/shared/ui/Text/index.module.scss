@@ -1,1 +1,15 @@
 @import "app/styles";
+
+.secondary{
+  color: $gray-text;
+  font: $p-regular;
+}
+
+.attention{
+  color: $orange-text;
+  font: $p-regular;
+}
+.regular{
+  color: $default-black;
+  font: $p-regular;
+}
