@@ -1,4 +1,4 @@
-import { RegularButton, SkipButton } from 'shared/ui';
+import { RegularButton, SkipButton, Slider } from 'shared/ui';
 import Title from 'shared/ui/Title';
 import Text from 'shared/ui/Text';
 
@@ -29,6 +29,7 @@ function App() {
       <Text type="secondary"> Game over!!!</Text>
       <Text type="attention"> Game over!!!</Text>
       <Text> Game over!!!</Text>
+      <Slider />
     </div>
   );
 }
